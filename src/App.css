@@ -1,38 +1,118 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.heading{
+  background: #e81341;
+  background: linear-gradient(
+45deg, #e81341, #d60543);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card {
+  padding: 30px 10px;
+  border: solid 1px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  font-size: 12px;
+}
+.card-body{
+  text-align: left;
+}
+.card:hover {
+  box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.08);
+}
+.card-title {
+  margin-top: 20px;
+}
+.card-text {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.card-text .fa {
+  font-size: 26px;
+}
+.avatar {
+  width: 140px;
+  margin: auto;
+}
+.avatar img {
+  border: solid 6px transparent;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.card:hover .avatar img {
+  border-color: rgb(186, 4, 53);
+}
+
+.btn {
+  border-radius: 25px;
+}
+
+footer p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+footer p a,
+footer p a:hover {
+  color:  rgb(186, 4, 53);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1040px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.theme-btn{
+  background:rgb(186, 4, 53);
+  border: none;
   color: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px lightgrey;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+.theme-btn:hover{
+  background: white;
+  color:rgb(186, 4, 53);
+  border-color: rgb(186, 4, 53);
+}
+.font-weight-bold{
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.icons-span{
+  float: right;
+}
+.icons-span a{
+  margin-right: 2px;
+  color: white;
+  background-color: black;
+  padding: 2px;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form-group label{
+  position: relative;
+  top: 7px;
+}
+
+
+@media (max-width: 600px) {
+  .form-group label{
+    position: relative;
+    top: 0px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.text-right{
+  text-align: right;
 }
